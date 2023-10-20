@@ -1,0 +1,668 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title></title>
+    <style type="text/css" rel="stylesheet" media="all">
+        /* Base ------------------------------ */
+
+        @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
+
+        body {
+            width: 100% !important;
+            height: 100%;
+            margin: 0;
+            -webkit-text-size-adjust: none;
+        }
+
+        a {
+            color: #3869D4;
+        }
+
+        a img {
+            border: none;
+        }
+
+        td {
+            word-break: break-word;
+        }
+
+        .preheader {
+            display: none !important;
+            visibility: hidden;
+            mso-hide: all;
+            font-size: 1px;
+            line-height: 1px;
+            max-height: 0;
+            max-width: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        /* Type ------------------------------ */
+
+        body,
+        td,
+        th {
+            font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #333333;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        td,
+        th {
+            font-size: 16px;
+        }
+
+        p,
+        ul,
+        ol,
+        blockquote {
+            margin: .4em 0 1.1875em;
+            font-size: 16px;
+            line-height: 1.625;
+        }
+
+        p.sub {
+            font-size: 13px;
+        }
+
+        /* Utilities ------------------------------ */
+
+        .align-right {
+            text-align: right;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .u-margin-bottom-none {
+            margin-bottom: 0;
+        }
+
+        /* Buttons ------------------------------ */
+
+        .button {
+            background-color: #000000;
+            border-top: 10px solid #000000;
+            border-right: 18px solid #000000;
+            border-bottom: 10px solid #000000;
+            border-left: 18px solid #000000;
+            display: inline-block;
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 3px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+            -webkit-text-size-adjust: none;
+            box-sizing: border-box;
+        }
+
+        .button--green {
+            background-color: #22BC66;
+            border-top: 10px solid #22BC66;
+            border-right: 18px solid #22BC66;
+            border-bottom: 10px solid #22BC66;
+            border-left: 18px solid #22BC66;
+        }
+
+        .button--red {
+            background-color: #FF6136;
+            border-top: 10px solid #FF6136;
+            border-right: 18px solid #FF6136;
+            border-bottom: 10px solid #FF6136;
+            border-left: 18px solid #FF6136;
+        }
+
+
+
+
+
+        @media only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+                text-align: center !important;
+            }
+        }
+
+        /* Attribute list ------------------------------ */
+
+        .attributes {
+            margin: 0 0 21px;
+        }
+
+        .attributes_content {
+            background-color: #F4F4F7;
+            padding: 16px;
+        }
+
+        .attributes_item {
+            padding: 0;
+        }
+
+        /* Related Items ------------------------------ */
+
+        .related {
+            width: 100%;
+            margin: 0;
+            padding: 25px 0 0 0;
+            -premailer-width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+        }
+
+        .related_item {
+            padding: 10px 0;
+            color: #CBCCCF;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        .related_item-title {
+            display: block;
+            margin: .5em 0 0;
+        }
+
+        .related_item-thumb {
+            display: block;
+            padding-bottom: 10px;
+        }
+
+        .related_heading {
+            border-top: 1px solid #CBCCCF;
+            text-align: center;
+            padding: 25px 0 10px;
+        }
+
+        /* Discount Code ------------------------------ */
+
+        .discount {
+            width: 100%;
+            margin: 0;
+            padding: 24px;
+            -premailer-width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            background-color: #F4F4F7;
+            border: 2px dashed #CBCCCF;
+        }
+
+        .discount_heading {
+            text-align: center;
+        }
+
+        .discount_body {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        /* Social Icons ------------------------------ */
+
+        .social {
+            width: auto;
+        }
+
+        .social td {
+            padding: 0;
+            width: auto;
+        }
+
+        .social_icon {
+            height: 20px;
+            margin: 0 8px 10px 8px;
+            padding: 0;
+        }
+
+        /* Data table ------------------------------ */
+
+        .purchase {
+            width: 100%;
+            margin: 0;
+            padding: 35px 0;
+            -premailer-width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+        }
+
+        .purchase_content {
+            width: 100%;
+            margin: 0;
+            padding: 25px 0 0 0;
+            -premailer-width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+        }
+
+        .purchase_item {
+            padding: 10px 0;
+            color: #51545E;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        .purchase_heading {
+            padding-bottom: 8px;
+            border-bottom: 1px solid #EAEAEC;
+        }
+
+        .purchase_heading p {
+            margin: 0;
+            color: #85878E;
+            font-size: 12px;
+        }
+
+        .purchase_footer {
+            padding-top: 15px;
+            border-top: 1px solid #EAEAEC;
+        }
+
+        .purchase_total {
+            margin: 0;
+            text-align: right;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .purchase_total--label {
+            padding: 0 15px 0 0;
+        }
+
+        body {
+            background-color: #F2F4F6;
+            color: #51545E;
+        }
+
+        p {
+            color: #51545E;
+        }
+
+        .email-wrapper {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            -premailer-width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            background-color: #F2F4F6;
+        }
+
+        .email-content {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            -premailer-width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+        }
+
+        /* Masthead ----------------------- */
+
+        .email-masthead {
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        .email-masthead_logo {
+            width: 94px;
+        }
+
+        .email-masthead_name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #A8AAAF;
+            text-decoration: none;
+            text-shadow: 0 1px 0 white;
+        }
+
+        /* Body ------------------------------ */
+
+        .email-body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            -premailer-width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+        }
+
+        .email-body_inner {
+            width: 570px;
+            margin: 0 auto;
+            padding: 0;
+            -premailer-width: 570px;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            background-color: #FFFFFF;
+        }
+
+        .email-footer {
+            width: 570px;
+            margin: 0 auto;
+            padding: 0;
+            -premailer-width: 570px;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            text-align: center;
+        }
+
+        .email-footer p {
+            color: #A8AAAF;
+        }
+
+        .body-action {
+            width: 100%;
+            margin: 30px auto;
+            padding: 0;
+            -premailer-width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            text-align: center;
+        }
+
+        .body-sub {
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid #EAEAEC;
+        }
+
+        .content-cell {
+            padding: 45px;
+        }
+
+        /*Media Queries ------------------------------ */
+
+        @media only screen and (max-width: 600px) {
+
+            .email-body_inner,
+            .email-footer {
+                width: 100% !important;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            body,
+            .email-body,
+            .email-body_inner,
+            .email-content,
+            .email-wrapper,
+            .email-masthead,
+            .email-footer {
+                background-color: #333333 !important;
+                color: #FFF !important;
+            }
+
+            p,
+            ul,
+            ol,
+            blockquote,
+            h1,
+            h2,
+            h3,
+            span,
+            .purchase_item {
+                color: #FFF !important;
+            }
+
+            .attributes_content,
+            .discount {
+                background-color: #222 !important;
+            }
+
+            .email-masthead_name {
+                text-shadow: none !important;
+            }
+        }
+
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+    </style>
+    <!--[if mso]>
+    <style type="text/css">
+      .f-fallback  {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  <![endif]-->
+</head>
+
+<body>
+    <span class="preheader">This is a receipt for your recent purchase on {{ purchase_date }}. No payment is due with
+        this receipt.</span>
+    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+            <td align="center">
+                <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                        <td class="email-masthead">
+                            <a href="https://example.com" class="f-fallback email-masthead_name">
+                                <img src="data:image/png;base64,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"
+                                    width="65" style="border-width:0;padding-right:1px">
+                                Boba Guys San Francisco
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Email Body -->
+                    <tr>
+                        <td class="email-body" width="570" cellpadding="0" cellspacing="0">
+                            <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0"
+                                role="presentation">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class="content-cell">
+                                        <div class="f-fallback">
+                                            <h1>Hi Alex,</h1>
+                                            <p>Thanks for stopping by. This email is the receipt for your
+                                                purchase. No payment is due.</p>
+                                            <p>This purchase will appear as “BobaGuysLLC” on your
+                                                credit card statement for your Visa ending in
+                                                0475. Need to <a href="{{billing_url}}">update your
+                                                    payment information</a>?</p>
+                                            <!-- Discount -->
+                                            <table class="discount" align="center" width="100%" cellpadding="0"
+                                                cellspacing="0" role="presentation">
+                                                <tr>
+                                                    <td align="center">
+                                                        <h1 class="f-fallback discount_heading">10% off your next
+                                                            purchase!</h1>
+                                                        <p class="f-fallback discount_body">Thanks for your support!
+                                                            Here's a coupon for 10% off your next purchase if used by
+                                                            12/31/24.</p>
+                                                        <!-- Border based button
+           https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                            role="presentation">
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <a href="http://example.com"
+                                                                        class="f-fallback button" target="_blank">Use
+                                                                        this discount now...</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="purchase" width="100%" cellpadding="0" cellspacing="0"
+                                                role="presentation">
+                                                <tr>
+                                                    <td>
+                                                        <h3>***ON SITE ORDER: TO GO***</h3>
+                                                    </td>
+                                                    <td>
+                                                        <h3 class="align-right">10/16/2023 11:42 AM</h3>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <table class="purchase_content" width="100%" cellpadding="0"
+                                                            cellspacing="0">
+                                                            <tr>
+                                                                <th class="purchase_heading" align="left">
+                                                                    <p class="f-fallback">Description</p>
+                                                                </th>
+                                                                <th class="purchase_heading" align="right">
+                                                                    <p class="f-fallback">Amount</p>
+                                                                </th>
+                                                            </tr>
+                                                            OG Black Milk Tea
+                                                            <tr>
+
+
+                                                                <td width="80%" class="purchase_item"><span
+                                                                        class="f-fallback">24oz ICED</span></td>
+
+                                                                <td class="align-right" width="20%"
+                                                                    class="purchase_item"><span
+                                                                        class="f-fallback">$6.50</span></td>
+                                                            </tr>
+                                                            x 1
+                                                            <tr>
+
+
+                                                                <td width="80%" class="purchase_item"><span
+                                                                        class="f-fallback">Boba</span></td>
+
+                                                                <td class="align-right" width="20%"
+                                                                    class="purchase_item"><span
+                                                                        class="f-fallback">$.75</span></td>
+                                                            </tr>
+
+
+                                                            <tr>
+
+                                                                <td width="80%" class="purchase_item"><span
+                                                                        class="f-fallback">Oat Milk (Oatly)</span></td>
+
+                                                                <td class="align-right" width="20%"
+                                                                    class="purchase_item"><span
+                                                                        class="f-fallback">$.50</span></td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td width="80%" class="purchase_item"><span
+                                                                        class="f-fallback">Espresso shot</span></td>
+
+                                                                <td class="align-right" width="20%"
+                                                                    class="purchase_item"><span
+                                                                        class="f-fallback">$1.50</span></td>
+                                                            </tr>
+
+
+
+                                                            <tr>
+                                                                <td width="80%" class="purchase_footer" valign="middle">
+                                                                    <p
+                                                                        class="f-fallback purchase_total purchase_total--label">
+                                                                        Total</p>
+                                                                </td>
+                                                                <td width="20%" class="purchase_footer" valign="middle">
+                                                                    <p class="f-fallback purchase_total">$9.25</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>If you have any questions about this receipt, simply reply to this email
+                                                or reach out to our <a href="{{support_url}}">support team</a> for help.
+                                            </p>
+                                            <p>Cheers,
+                                                <br>The Boba Guys team
+                                            </p>
+                                            <!-- Action -->
+                                            <table class="body-action" align="center" width="100%" cellpadding="0"
+                                                cellspacing="0" role="presentation">
+                                                <tr>
+                                                    <td align="center">
+                                                        <!-- Border based button
+           https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                            role="presentation">
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <a href="{{action_url}}"
+                                                                        class="f-fallback button button--blue"
+                                                                        target="_blank">Download as PDF</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Sub copy -->
+                                            <table class="body-sub" role="presentation">
+                                                <tr>
+                                                    <td>
+                                                        <p class="f-fallback sub"><strong>Need a printable copy for your
+                                                                records?</strong> You can <a
+                                                                href="{{action_url}}">download a PDF version</a>.</p>
+                                                        <p class="f-fallback sub">Moved recently? Have a new credit
+                                                            card? You can easily <a href="{{billing_url}}">update your
+                                                                billing information</a>.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0"
+                                role="presentation">
+                                <tr>
+                                    <td class="content-cell" align="center">
+                                        <p class="f-fallback sub align-center">
+                                            [BobaGuysLLC]
+                                            <br>429 Stockton St.
+                                            <br>San Francisco,CA 94108
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
